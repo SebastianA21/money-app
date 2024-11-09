@@ -1,0 +1,12 @@
+[
+    {
+        "sucursal": "Casa De Cambio Tijuana",
+        "direccion": "Av. 16 de Septiembre 123, Centro, 72000 Puebla, Pue.",
+        "operacion": "VENTA",
+        "tipoCambio": 15.75,
+        "monto": 200.00,
+        "recibido": 100.00,
+        "entregado": 1575.00,
+        "cambio": 0.00
+    }
+]
