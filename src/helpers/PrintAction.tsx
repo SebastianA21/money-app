@@ -18,37 +18,46 @@ const PrintAction = () => {
 
   const fetchFiles = async () => {
     try {
-      const htmlResponse = await fetch("/utils/receipt-files/receipt-default/receipt.html");
+      // Fetch the HTML content
+      const htmlResponse = await fetch('/utils/receipt-files/receipt-default/receipt.html');
       let html = await htmlResponse.text();
 
-      const cssResponse = await fetch("/utils/receipt-files/receipt-default/css/style.css");
+      // Fetch and embed the CSS content
+      const cssResponse = await fetch('/utils/receipt-files/receipt-default/css/style.css');
       const css = await cssResponse.text();
-      html = html.replace("</head>", `<style>${css}</style></head>`);
+      html = html.replace('</head>', `<style>${css}</style></head>`);
 
-      const jsResponse = await fetch("/utils/receipt-files/receipt-default/js/script.js");
+      // Fetch and embed the JS content
+      const jsResponse = await fetch('/utils/receipt-files/receipt-default/js/script.js');
       let js = await jsResponse.text();
-      const dataResponse = await fetch("/utils/receipt-files/receipt-default/data/data.json");
+
+      // Fetch and embed the JSON data
+      const dataResponse = await fetch('/utils/receipt-files/receipt-default/data/data.json');
       const data = await dataResponse.json();
-      js = js.replace("const receiptData = data;", `const receiptData = ${JSON.stringify(data)};`);
+      js = js.replace('const receiptData = data;', `const receiptData = ${JSON.stringify(data)};`);
 
-      html = html.replace("</body>", `<script>${js}</script></body>`);
+      html = html.replace('</body>', `<script>${js}</script></body>`);
 
-      const imageResponse = await fetch("/utils/receipt-files/receipt-default/images/logo.png");
+      // Fetch the image and convert it to Base64
+      const imageResponse = await fetch('/utils/receipt-files/receipt-default/images/logo.png');
       const imageBlob = await imageResponse.blob();
       const reader = new FileReader();
 
       reader.onloadend = () => {
         const base64Image = reader.result as string;
         const imageTag = `<img src="${base64Image}" class="logo"/>`;
-        html = html.replace("<img>", `${imageTag}`);
+
+        html = html.replace('<img class="logo" src="images/logo.png" alt="Logo">', `${imageTag}`);
+
+        // Store the final HTML with embedded styles, scripts, and image
         setReceiptHtml(html);
-        setPrintStatus("Receipt file loaded");
       };
 
       reader.readAsDataURL(imageBlob);
+      setReceiptHtml(html);
     } catch (error) {
-      console.error("Failed to load files:", error);
-      setPrintStatus("Failed to load files");
+      console.error('Failed to load files:', error);
+      setPrintStatus('Failed to load files');
     }
   };
 
