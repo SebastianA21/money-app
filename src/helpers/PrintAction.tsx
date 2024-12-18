@@ -39,6 +39,7 @@ const PrintAction = () => {
 
       reader.onloadend = () => {
         const base64Image = reader.result as string;
+        console.log("Image loaded:", base64Image);
         const imageTag = `<img src="${base64Image}" class="logo"/>`;
         html = html.replace("<img>", `${imageTag}`);
         setReceiptHtml(html);
