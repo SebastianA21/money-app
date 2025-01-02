@@ -22,7 +22,7 @@ export const PrinterProvider: React.FC<{ children: React.ReactNode }> = ({ child
     const initConnection = () => {
         console.log("WebSocket initialized");
         try {
-            const ws = new WebSocket("ws://localhost:8080");
+            const ws = new WebSocket("ws://localhost:51510");
             setWs(ws);
 
             // Set the onmessage handler to the callback function

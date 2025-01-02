@@ -18,35 +18,35 @@ const PrintAction = () => {
 
   const fetchFiles = async () => {
     try {
-      const htmlResponse = await fetch("/utils/receipt-files/receipt-default/receipt.html");
+      const htmlResponse = await fetch("/utils/receipt-files/formato/receipt.html");
       let html = await htmlResponse.text();
 
-      const cssResponse = await fetch("/utils/receipt-files/receipt-default/css/style.css");
-      const css = await cssResponse.text();
-      html = html.replace("</head>", `<style>${css}</style></head>`);
+      // const cssResponse = await fetch("/utils/receipt-files/receipt-default/css/style.css");
+      // const css = await cssResponse.text();
+      // html = html.replace("</head>", `<style>${css}</style></head>`);
 
-      const jsResponse = await fetch("/utils/receipt-files/receipt-default/js/script.js");
-      let js = await jsResponse.text();
-      const dataResponse = await fetch("/utils/receipt-files/receipt-default/data/data.json");
-      const data = await dataResponse.json();
-      js = js.replace("const receiptData = data;", `const receiptData = ${JSON.stringify(data)};`);
+      // const jsResponse = await fetch("/utils/receipt-files/receipt-default/js/script.js");
+      // let js = await jsResponse.text();
+      // const dataResponse = await fetch("/utils/receipt-files/receipt-default/data/data.json");
+      // const data = await dataResponse.json();
+      // js = js.replace("const receiptData = data;", `const receiptData = ${JSON.stringify(data)};`);
 
-      html = html.replace("</body>", `<script>${js}</script></body>`);
+      // html = html.replace("</body>", `<script>${js}</script></body>`);
 
-      const imageResponse = await fetch("/utils/receipt-files/receipt-default/images/logo.png");
-      const imageBlob = await imageResponse.blob();
-      const reader = new FileReader();
+      // const imageResponse = await fetch("/utils/receipt-files/receipt-default/images/logo.png");
+      // const imageBlob = await imageResponse.blob();
+      // const reader = new FileReader();
 
-      reader.onloadend = () => {
-        const base64Image = reader.result as string;
-        console.log("Image loaded:", base64Image);
-        const imageTag = `<img src="${base64Image}" class="logo"/>`;
-        html = html.replace("<img>", `${imageTag}`);
-        setReceiptHtml(html);
-        setPrintStatus("Receipt file loaded");
-      };
-
-      reader.readAsDataURL(imageBlob);
+      // reader.onloadend = () => {
+      //   const base64Image = reader.result as string;
+      //   console.log("Image loaded:", base64Image);
+      //   const imageTag = `<img src="${base64Image}" class="logo"/>`;
+      //   html = html.replace("<img>", `${imageTag}`);
+      // };
+      
+      setReceiptHtml(html);
+      setPrintStatus("Receipt file loaded");
+      // reader.readAsDataURL(imageBlob);
     } catch (error) {
       console.error("Failed to load files:", error);
       setPrintStatus("Failed to load files");
