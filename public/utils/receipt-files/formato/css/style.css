@@ -1,0 +1,251 @@
+@page {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@page {
+    margin: 0;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Sans-serif;
+    height: 100%;
+    width: 95%;
+}
+footer {
+    clear: both;
+    text-align: center;
+}
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { zoom: 1; }
+/* Classes */
+.big-input {
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+.cellphone-check {
+    border: 2px solid black;
+    border-radius: 6px;
+    display: inline-block;
+    height: 31px;
+    width: 15%;
+}
+.cellphone-components {
+    clear: both;
+    float: right;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    width: 95%;
+}
+.cellphone-input {
+    border: 2px solid black;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+    height: 23px;
+    line-height: 23px;
+    margin-left: 5px;
+    padding: 4px 8px;
+    width: 87%;
+}
+.cellphone-inputs {
+    display: inline-block;
+    float: right;
+    height: 35px;
+    width: 78%;
+}
+.cellphone-title {
+    clear: both;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 35px;
+    text-align: right;
+    width: 22%;
+}
+.checkbox-input {
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+}
+.checkbox-inputs {
+    float: right;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    width: 95%;
+}
+.checkbox-text {
+    display: inline-block;
+    font-size: 12px;
+    width: 90%;
+}
+.company-name {
+    font-size: 6.35pt;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+}
+.dotted-instructions {
+    border-top: 2px dotted black;
+    clear: both;
+    color: black;
+    font-size: 10px;
+    height: 11px;
+    line-height: 11px;
+    margin: 0.25cm 0;
+    padding-top: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+.footer-advise {
+    font-size: 7pt;
+    margin: 0 auto;
+    width: 98%;
+}
+.footer-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-title,
+.privacidad {
+    background-color: black;
+    color: white;
+    font-size: 10pt;
+    margin: 0.5cm 0 0.25cm;
+    padding: 0.1cm 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.privacidad {
+    font-size: 7pt;
+    margin-bottom: 0;
+    margin-top: 0.25cm;
+}
+.fecha {
+    font-size: 7pt;
+    margin-bottom: 0.25cm 0;
+    padding-right: 0.25cm;
+    text-align: right;
+    vertical-align: middle;
+}
+.fecha:before {
+    content: '--  ';
+}
+.fecha:after {
+    content: '  --';
+}
+.generic-input {
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    min-height: 23px;
+    line-height: 23px;
+    margin-top: 3px;
+    padding: 4px 8px;
+}
+.img-div {
+    height: 2.5cm;
+    padding: 0.5cm 0;
+    width: 100%;
+}
+.img-div img {
+    padding-left: 0.35cm;
+    width: 85%;
+}
+.inputs {
+    width: 100%;
+    margin-bottom: 3px;
+}
+.instructions {
+    font-size: 10.5px;
+    line-height: 130%;
+    margin: 0 auto;
+    margin-bottom: 6px;
+    text-align: left;
+    width: 98%;
+}
+.main-body {
+    width: 100%;
+}
+.sign-title {
+    bottom: 4px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+}
+.subtitle-input {
+    display: block;
+    float: right;
+    font-size: 11px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+.title-input {
+    font-size: 11px;
+    clear: both;
+    margin-bottom: 4px;
+    width: 100%;
+}
+.title-input .num {
+    font-size: 14px;
+}
+.dashed-input {
+    border-bottom: 2px dotted black;
+    border-top: 2px dotted black;
+    overflow: hidden;
+    padding: 4px 0;
+}
+.dashed-input strong {
+    clear: both;
+    display: block;
+    text-align: center;
+}
+.underline-input {
+    height: 20px;
+    border-bottom: 2px solid black;
+}
+.options-ctn {
+    clear: both;
+    margin: 4px 0;
+}
+.option-ctn {
+    float: left;
+    line-height: 18px;
+    margin-left: -9px;
+    text-align: center;
+    width: 50%;
+}
+.option-check {
+    border: 2px solid black;
+    border-radius: 6px;
+    display: inline-block;
+    height: 18px;
+    margin-left: 10px;
+    width: 18px;
+}
+.option-label {
+    font-weight: bold;
+    line-height: 18px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 2px;
+}

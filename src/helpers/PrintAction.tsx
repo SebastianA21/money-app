@@ -21,9 +21,9 @@ const PrintAction = () => {
       const htmlResponse = await fetch("/utils/receipt-files/formato/receipt.html");
       let html = await htmlResponse.text();
 
-      // const cssResponse = await fetch("/utils/receipt-files/receipt-default/css/style.css");
-      // const css = await cssResponse.text();
-      // html = html.replace("</head>", `<style>${css}</style></head>`);
+      const cssResponse = await fetch("/utils/receipt-files/receipt-default/css/style.css");
+      const css = await cssResponse.text();
+      html = html.replace("</head>", `<style>${css}</style></head>`);
 
       // const jsResponse = await fetch("/utils/receipt-files/receipt-default/js/script.js");
       // let js = await jsResponse.text();
