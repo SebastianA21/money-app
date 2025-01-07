@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ticket</title>
-<!--        <link rel="stylesheet" href="css/style.css">-->
+       <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
@@ -13,27 +13,28 @@
                 <div class="img-div">
                     <img src="https://caja.dolarexpress.com/public/img/logo/moneyexpress_bw.svg" alt="MoneyExpress logo">
                 </div>
-                <p>Sistema automatizado Money Express®️<br>
-                    Todos los derechos reservados 2024</p>
+                <h3 class="center-text instructions">Sistema automatizado Money Express®️<br>
+                    Todos los derechos reservados 2024</h3>
             </header>
 
             <section>
                 <table>
                     <thead>
-                        <h1>Datos de Usuario</h1>
-                        <p class="center-text">Favor de leer y completar la información que se presenta a continuación. Garantizamos la protección y buen manejo de la información que aquí se presente.</p>
+                        <h1 class="form-title big-letters">Datos de Usuario</h1>
+                        <p class="instructions">Favor de leer y completar la información que se presenta a continuación. Garantizamos la protección y buen manejo de la información que aquí se presente.</p>
                     </thead>
 
                     <tbody>
                         <tr>
                             <td>
-                                <p>¿Es tuyo el dinero que vas a cambiar?</p>
+                                <hr>
+                                <p class="no-margin">¿Es tuyo el dinero que vas a cambiar?</p>
                                 <label><input type="radio" name="own_money"> Sí</label>
                                 <label><input type="radio" name="own_money"> No</label>
-                                <p class="center-text">Si seleccionaste NO, deberá presentarse el dueño del dinero para realizar la operación.</p>
+                                <p class="center-text no-margin">Si seleccionaste NO, deberá presentarse el dueño del dinero para realizar la operación.</p>
+                                <hr>
                             </td>
                         </tr>
-
                         <tr>
                             <td>
                                 <p>1) Nombre completo:</p>
@@ -135,25 +136,19 @@
                                 <p>12) El dinero proviene de:</p>
                                 <label><input type="radio">De mi negocio y/u ocupación</label><br>
                                 <label><input type="radio">De otra actividad y/o motivo</label><br>
+                                <p>Describir detalladamente:</p>
+                                <textarea class="big-input"></textarea>
                             </td>
                         </tr>
 
                         <tr>
-                            <td>Describir detalladamente:</td>
-                            <td><textarea class="big-input" placeholder="Descripción detallada"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td>El dinero lo usarás para:</td>
                             <td>
-                                <ul>
-                                    <li>Mi negocio y/u ocupación</li>
-                                    <li>Para otra actividad y/o motivo</li>
-                                </ul>
+                                <p>13) El dinero lo usarás para:</p>
+                                <label><input type="radio">Mi negocio y/u ocupación</label><br>
+                                <label><input type="radio">Para otra actividad y/o motivo</label><br>
+                                <p>Describir detalladamente:</p>
+                                <textarea class="big-input"></textarea>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>Describir detalladamente:</td>
-                            <td><textarea class="big-input" placeholder="Descripción detallada"></textarea></td>
                         </tr>
                     </tbody>
                 </table>
