@@ -4,123 +4,171 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ticket</title>
-        <link rel="stylesheet" href="css/style.css">
+<!--        <link rel="stylesheet" href="css/style.css">-->
     </head>
+
     <body>
         <main>
-<!--            <header>-->
-<!--                <div class="img-div">-->
-<!--                    <img src="https://caja.dolarexpress.com/public/img/logo/moneyexpress_bw.svg" alt="MoneyExpress logo">-->
-<!--                </div>-->
-<!--                <p>Sistema automatizado Money Express®️<br>-->
-<!--                    Todos los derechos reservados 2024</p>-->
-<!--            </header>-->
+            <header>
+                <div class="img-div">
+                    <img src="https://caja.dolarexpress.com/public/img/logo/moneyexpress_bw.svg" alt="MoneyExpress logo">
+                </div>
+                <p>Sistema automatizado Money Express®️<br>
+                    Todos los derechos reservados 2024</p>
+            </header>
 
-            <h1>Datos de Usuario</h1>
-            <p>Favor de leer y completar la información que se presenta a continuación. Garantizamos la protección y buen manejo de la información que aquí se presente.</p>
+            <section>
+                <table>
+                    <thead>
+                        <h1>Datos de Usuario</h1>
+                        <p class="center-text">Favor de leer y completar la información que se presenta a continuación. Garantizamos la protección y buen manejo de la información que aquí se presente.</p>
+                    </thead>
 
-            <div class="form-boxed">
-                <p class="center-text">¿Es tuyo el dinero que vas a cambiar?</p>
-                <p>Sí</p>
-                <p>No</p>
-                <p class="center-text">Si seleccionaste NO, deberá presentarse el dueño del dinero para realizar la operación.</p>
-            </div>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>¿Es tuyo el dinero que vas a cambiar?</p>
+                                <label><input type="radio" name="own_money"> Sí</label>
+                                <label><input type="radio" name="own_money"> No</label>
+                                <p class="center-text">Si seleccionaste NO, deberá presentarse el dueño del dinero para realizar la operación.</p>
+                            </td>
+                        </tr>
 
-            <div class="form-boxed"> 
-                <p>Nombre completo:</p>
-                <div class="generic-input"></div>
+                        <tr>
+                            <td>
+                                <p>1) Nombre completo:</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>2) ¿En qué ciudad naciste?:</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>3) Estado civil:</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>4) Correo electrónico:</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>4) Correo electrónico:</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>5) Número de Identificación Fiscal (RFC/SSN):</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>6) ¿A qué te dedicas?:</p>
+                                <input type="text" class="generic-input">
+                                <p>a) ¿En dónde trabajas?:</p>
+                                <p>Si eres estudiante, ama de casa o jubilado, escribe el nombre de la persona que te regaló el dinero.</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
 
-                <p>¿En qué ciudad naciste?:</p>
-                <div class="generic-input"></div>
-                
-                <p>Estado civil:</p>
-                <div class="generic-input"></div>
-                   
-                <p>Correo electrónico (en caso de tener uno):</p>
-                <div class="generic-input"></div>
-            
-                <p>Número de Identificación Fiscal (RFC/SSN):</p>
-                <div class="generic-input"></div>
-            
-                <p>¿A qué te dedicas?:</p>
-                <div class="generic-input"></div>
+                        <tr>
+                            <td>
+                                <p>7) Teléfono(s) (Obligatorio al menos uno):</p>
+                                <label>Casa: <input type="text" class="generic-input"></label><br>
+                                <label>Celular: <input type="text" class="generic-input"></label><br>
+                                <label>Oficina: <input type="text" class="generic-input"></label>
+                            </td>
+                        </tr>
 
-                <p>¿En dónde trabajas?</p>
-                <p>Si eres estudiante, ama de casa o jubilado, escribe el nombre de la persona que te regaló el dinero.</p>
-                <div class="generic-input"></div>
+                        <tr>
+                            <td>
+                                <p>8) ¿Vives en el domicilio declarado en el documento de identificación?</p>
+                                <label><input type="radio" name="residence"> Sí</label>
+                                <label><input type="radio" name="residence"> No</label>
+                                <p>En caso de NO, favor de presentar un comprobante de domicilio válido.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <p>Teléfono(s) (Obligatorio al menos uno):</p>
-                        
-                <p>Casa:</p>
-                <div class="generic-input"></div>
-                <p>Celular:</p>
-                <div class="generic-input"></div>
-                <p>Oficina:</p>
-                <div class="generic-input"></div>
-          
-                <p>¿Vives en el domicilio declarado en el documento de identificación?:</p>
-                <p>Sí</p>
-                <p>No</p>
-                <p>En caso de NO, favor de presentar un comprobante de domicilio válido.</p>
-                
                 <hr>
                 <p>Doblar formato en ésta línea</p>
-                
-                <p>¿Qué servicio necesitas?:</p>
-                <ul>
-                    <li>Necesito pesos</li>
-                    <li>Necesito dólares</li>
-                    <li>Necesito ambos</li>
-                </ul>
-                
-                <p>¿Cuántas veces cambias al mes?:</p>
-                <div class="generic-input"></div>
-        
-                <p>¿Qué cantidad ocupas al mes? (Sólo uno):</p>
-                <ul>
-                    <li>Menos de 3,000 Dólares</li>
-                    <li>De 3,000 a 10,000 Dólares</li>
-                    <li>Más de 10,000 Dólares</li>
-                </ul>
 
-                <p>El dinero proviene de (Sólo uno):</p>
-                <ul>
-                    <li>De mi negocio y/u ocupación.</li>
-                    <li>De otra actividad y/o motivo.</li>
-                </ul>
-                        
-                <p>Describir detalladamente (Obligatorio):</p>
-                <div class="big-input"></div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>9) ¿Qué servicio necesitas?</p>
+                                <label><input type="radio" name="pesos">Necesito pesos</label><br>
+                                <label><input type="radio" name="dolares">Necesito dólares</label><br>
+                                <label><input type="radio" name="dolares">Necesito ambos</label>
+                            </td>
+                        </tr>
 
-                <p>El dinero lo usarás para (Sólo uno):</p>
-                <ul>
-                    <li>Mi negocio y/u ocupación.</li>
-                    <li>Para otra actividad y/o motivo.</li>
-                </ul>
-                
-                <p>Describir detalladamente (Obligatorio):</p>
-                <div class="big-input"></div>
-                    
+                        <tr>
+                            <td>
+                                <p>10) ¿Cuántas veces cambias al mes?</p>
+                                <input type="text" class="generic-input">
+                            </td>
+                        </tr>
 
-                <div class="big-input">
-                    <h2><span>Firma</span> (No salir del recuadro)</h2>
+                        <tr>
+                            <td>
+                                <p>11) ¿Qué cantidad ocupas al mes?</p>
+                                <label><input type="radio">Menos de 3,000 Dólares</label><br>
+                                <label><input type="radio">De 3,000 a 10,000 Dólares</label><br>
+                                <label><input type="radio">Más de 10,000 Dólares</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p>12) El dinero proviene de:</p>
+                                <label><input type="radio">De mi negocio y/u ocupación</label><br>
+                                <label><input type="radio">De otra actividad y/o motivo</label><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Describir detalladamente:</td>
+                            <td><textarea class="big-input" placeholder="Descripción detallada"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>El dinero lo usarás para:</td>
+                            <td>
+                                <ul>
+                                    <li>Mi negocio y/u ocupación</li>
+                                    <li>Para otra actividad y/o motivo</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Describir detalladamente:</td>
+                            <td><textarea class="big-input" placeholder="Descripción detallada"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="big-input center-text">
+                    <h2>Firma (No salir del recuadro)</h2>
                 </div>
-            </div>
+            </section>
 
             <footer>
-                <div>
-                    <h2>Favor de entregar al Cajero</h2>
-                    <h2 class="center-text ">"Declaro bajo protesta de decir verdad, la autenticidad de la información y documentación proporcionada al centro cambiario, así como que los recursos que opero y operaré, y su origen, manejo o destino no se encuentran relacionados con operaciones que pudieran favorecer, prestar ayuda, auxilio o cooperación de cualquier especie para la comisión de los delitos previstos en los Artículos 400 BIS y/o 139 Quater del Código Penal Federal (operaciones con recursos de procedencia ilícita y/o financiamiento al terrorismo)."</h2>
-                </div>
-
-                <div>
-                    <p><span>Impreso en: </span>20/12/2024</p>
-                </div>
-
-                <div>
-                    <h6>Aviso de privacidad en: www.moneyexpress.io</h6>
-                </div>
+                <h2>Favor de entregar al Cajero</h2>
+                <p>"Declaro bajo protesta de decir verdad, la autenticidad de la información..."</p>
+                <p><span>Impreso en: </span>20/12/2024</p>
+                <h6>Aviso de privacidad en: www.moneyexpress.io</h6>
             </footer>
         </main>
-    </body>
-</html>
+        </body>
+    </html>
