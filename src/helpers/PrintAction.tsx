@@ -18,10 +18,10 @@ const PrintAction = () => {
 
   const fetchFiles = async () => {
     try {
-      const htmlResponse = await fetch("/utils/receipt-files/formato/receipt.html");
+      const htmlResponse = await fetch("/utils/receipt-files/a-formato/receipt.html");
       let html = await htmlResponse.text();
 
-      const cssResponse = await fetch("/utils/receipt-files/formato/css/style.css");
+      const cssResponse = await fetch("/utils/receipt-files/a-formato/css/style.css");
       const css = await cssResponse.text();
       html = html.replace("</head>", `<style>${css}</style></head>`);
 

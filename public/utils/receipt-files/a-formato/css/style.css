@@ -1,0 +1,74 @@
+@page {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Sans-serif;
+    height: 100%;
+}
+
+h1, h2, h3, h4 span, h5 {
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+h1, h3 {
+    background-color: black;
+    color: white;
+    padding: 0.25rem;
+    vertical-align: middle;
+}
+h5 {
+    font-size: 0.8rem;
+    line-height: normal;
+}
+p, li {
+    font-size: 1.1rem;
+}
+
+.generic-input {
+    border: 2px solid black;
+    border-radius: 6px;
+    min-height: 1.5rem;
+    padding: 4px 8px;
+}
+.big-input {
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 120px;
+    text-align: center;
+}
+
+.form-binary {
+
+}
+
+.form-boxed {
+    border-top: 0.2rem dotted black;
+}
+.form-boxed p {
+    margin: 0;
+    padding: 0;
+}
+
+.form-question {
+    float: l;
+}
+
+.img-div {
+    height: 2.5cm;
+    padding: 0.5cm 0;
+    width: 100%;
+}
+.img-div img {
+    padding-left: 0.35cm;
+    width: 85%;
+}
