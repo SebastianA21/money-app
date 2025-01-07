@@ -3,71 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ticket</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        .center-text {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .big-input {
+            height: 80px;
+            border: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
-    <div class="ticket"><div class="container">
-        <div class="logo-container">
-            <img>
-        </div>
+    <main>
+        <header>
+            <div class="img-div">
+                <img src="https://caja.dolarexpress.com/public/img/logo/moneyexpress_bw.svg" alt="MoneyExpress logo">
+            </div>
+            <p>Sistema automatizado Money Express®️<br>
+                Todos los derechos reservados 2024</p>
+        </header>
 
-        <div class="content-container">
-            <p class="text-center font-weight-bold fs-3" id="sucursal">HACIENDA SOLER</p>
-            <p class="text-center fs-2" id="direccion">
-                LIBRAMIENTO SUR #1051, COL PLAYAS DE TIJUANA C.P 22500 TIJUANA BC
-            </p>
-            <p class="text-center fs-2">RFC. SHS040508U2A</p>
-        </div>
-    </div>
-    <table class="receiptTable">
-        <tbody>
-            <tr>
-                <td class="description" id="operacion" style="font-size: 9pt" colspan="2"># Venta: N62</td>
-            </tr>
-            <tr class="line">
-                <td class="description" id="current-date" style="font-size: 9pt"></td>
-                <td class="amount" id="current-time" style="font-size: 9pt"></td>
-            </tr>
-            <tr class="line">
-                <td class="description" style="font-size: 9pt" colspan="2">Público General - 1</td>
-            </tr>
-            <tr>
-                <td class="room-description" style="font-size: 9pt; width: 40%">Habitación:</td>
-                <td class="room-in-cell font-weight-bold" style="font-size: 15pt">#102</td>
-            </tr>
-            <tr>
-                <td class="description" style="font-size: 9pt">Sub Total</td>
-                <td class="amount" style="font-size: 9pt">$634.78 MXN</td>
-            </tr>
-            <tr>
-                <td class="description" style="font-size: 9pt">IVA 8%</td>
-                <td class="amount" style="font-size: 9pt">$50.78 MXN</td>
-            </tr>
-            <tr>
-                <td class="description" style="font-size: 9pt">ISH 7%</td>
-                <td class="amount" style="font-size: 9pt">$44.43 MXN</td>
-            </tr>
-            <tr>
-                <td class="description" style="font-size: 9pt">Total MXN</td>
-                <td class="amount" style="font-size: 9pt">$730.00 MXN</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr class="line">
-                <td class="description" style="font-size: 9pt">Total USD (16.80 x 1)</td>
-                <td class="amount" style="font-size: 9pt">$43.45 USD</td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="text-center fs-2" style="font-size: 9pt">GRACIAS POR SU PREFERENCIA</p>
-    </div>
-    <script src="js/script.js"></script>
+        <section>
+            <h1>Datos de Usuario</h1>
+            <p class="center-text">Favor de leer y completar la información que se presenta a continuación. Garantizamos la protección y buen manejo de la información que aquí se presente.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Información Personal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>¿Es tuyo el dinero que vas a cambiar?</td>
+                        <td>
+                            <label><input type="radio" name="own_money"> Sí</label>
+                            <label><input type="radio" name="own_money"> No</label>
+                            <p class="center-text">Si seleccionaste NO, deberá presentarse el dueño del dinero para realizar la operación.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nombre completo:</td>
+                        <td><input type="text" class="generic-input" placeholder="Nombre completo"></td>
+                    </tr>
+                    <tr>
+                        <td>¿En qué ciudad naciste?:</td>
+                        <td><input type="text" class="generic-input" placeholder="Ciudad de nacimiento"></td>
+                    </tr>
+                    <tr>
+                        <td>Estado civil:</td>
+                        <td><input type="text" class="generic-input" placeholder="Estado civil"></td>
+                    </tr>
+                    <tr>
+                        <td>Correo electrónico:</td>
+                        <td><input type="email" class="generic-input" placeholder="Correo electrónico"></td>
+                    </tr>
+                    <tr>
+                        <td>Número de Identificación Fiscal (RFC/SSN):</td>
+                        <td><input type="text" class="generic-input" placeholder="RFC/SSN"></td>
+                    </tr>
+                    <tr>
+                        <td>¿A qué te dedicas?:</td>
+                        <td><input type="text" class="generic-input" placeholder="Ocupación"></td>
+                    </tr>
+                    <tr>
+                        <td>¿En dónde trabajas?:</td>
+                        <td>
+                            <input type="text" class="generic-input" placeholder="Lugar de trabajo">
+                            <p>Si eres estudiante, ama de casa o jubilado, escribe el nombre de la persona que te regaló el dinero.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono(s) (Obligatorio al menos uno):</td>
+                        <td>
+                            <label>Casa: <input type="text" class="generic-input" placeholder="Teléfono de casa"></label><br>
+                            <label>Celular: <input type="text" class="generic-input" placeholder="Teléfono celular"></label><br>
+                            <label>Oficina: <input type="text" class="generic-input" placeholder="Teléfono oficina"></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>¿Vives en el domicilio declarado en el documento de identificación?</td>
+                        <td>
+                            <label><input type="radio" name="residence"> Sí</label>
+                            <label><input type="radio" name="residence"> No</label>
+                            <p>En caso de NO, favor de presentar un comprobante de domicilio válido.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Información Financiera</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>¿Qué servicio necesitas?</td>
+                        <td>
+                            <ul>
+                                <li>Necesito pesos</li>
+                                <li>Necesito dólares</li>
+                                <li>Necesito ambos</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>¿Cuántas veces cambias al mes?</td>
+                        <td><input type="text" class="generic-input" placeholder="Veces al mes"></td>
+                    </tr>
+                    <tr>
+                        <td>¿Qué cantidad ocupas al mes?</td>
+                        <td>
+                            <ul>
+                                <li>Menos de 3,000 Dólares</li>
+                                <li>De 3,000 a 10,000 Dólares</li>
+                                <li>Más de 10,000 Dólares</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>El dinero proviene de:</td>
+                        <td>
+                            <ul>
+                                <li>De mi negocio y/u ocupación</li>
+                                <li>De otra actividad y/o motivo</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Describir detalladamente:</td>
+                        <td><textarea class="big-input" placeholder="Descripción detallada"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>El dinero lo usarás para:</td>
+                        <td>
+                            <ul>
+                                <li>Mi negocio y/u ocupación</li>
+                                <li>Para otra actividad y/o motivo</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Describir detalladamente:</td>
+                        <td><textarea class="big-input" placeholder="Descripción detallada"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="big-input center-text">
+                <h2>Firma (No salir del recuadro)</h2>
+            </div>
+        </section>
+
+        <footer>
+            <h2>Favor de entregar al Cajero</h2>
+            <p>"Declaro bajo protesta de decir verdad, la autenticidad de la información..."</p>
+            <p><span>Impreso en: </span>20/12/2024</p>
+            <h6>Aviso de privacidad en: www.moneyexpress.io</h6>
+        </footer>
+    </main>
 </body>
 </html>
