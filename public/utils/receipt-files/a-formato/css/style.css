@@ -15,58 +15,86 @@ body {
     height: 100%;
 }
 
-h1, h2, h3, h4 span, h5 {
+h1, h2, h3, h4 span, h5, h6 {
     text-transform: uppercase;
     text-align: center;
-    
 }
-h1, h3 {
+h2 span {
+    text-transform: none;
+}
+h1, h3, h6 {
     background-color: black;
     color: white;
-    padding: 0.25rem;
+    padding: 0.1cm 0;
     vertical-align: middle;
 }
 h5 {
     font-size: 0.8rem;
     line-height: normal;
+    margin-top: 0;
 }
 p, li {
     font-size: 1.1rem;
 }
-
-.generic-input {
-    border: 2px solid black;
-    border-radius: 6px;
-    min-height: 1.5rem;
-    padding: 4px 8px;
+ol, ul {
+    list-style: none;
 }
-.big-input {
-    border: 2px solid black;
-    border-radius: 6px;
-    height: 120px;
-    text-align: center;
+ol ol {
+    padding-left: 10%;
 }
-
-.form-binary {
-
-}
-
-.form-boxed {
-    border-top: 0.2rem dotted black;
-}
-.form-boxed p {
-    margin: 0;
+.no-padding {
     padding: 0;
 }
+.no-margin {
+    margin: 0;
+}
 
+.instructions {
+    padding: 0 0.1cm;
+    margin: 0.2cm 0;
+}
+
+.center-text {
+    text-align: center;
+}
+.big-letters {
+    font-size: 1.4rem;
+}
 .form-question {
-    float: l;
+    margin: 0 0 0.1cm;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 23px;
+    height: 23px;
+    border: 2px solid black;
+    appearance: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.generic-input, .big-input {
+    border: 2px solid black;
+    border-radius: 6px;
+    min-height: 2.4rem;
+    padding: 4px 8px;
+    margin-bottom: 0.1cm;
+}
+.big-input {
+    height: 120px;
+}
+
+hr {
+    border-top: 2px dotted;
 }
 
 .img-div {
     height: 2.5cm;
     padding: 0.5cm 0;
-    width: 100%;
+    width: 95%;
+    display: grid;
+    place-items: center;
 }
 .img-div img {
     padding-left: 0.35cm;

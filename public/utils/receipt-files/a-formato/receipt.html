@@ -25,59 +25,61 @@
             </header>
 
             <div>
-                <h1>Datos de Usuario</h1>
+                <h1 class="big-letters no-margin">Datos de Usuario</h1>
             </div>
             <div>
-                <p>Favor de leer y completar la información que se presenta a continuación. Garantizamos la protección y buen manejo de la información que aquí se presente.</p>
+                <p class="instructions">Favor de leer y completar la información que se presenta a continuación. Garantizamos la protección y buen manejo de la información que aquí se presente.</p>
             </div>
 
-            <div class="form-boxed">
-                <p>¿Es tuyo el dinero que vas a cambiar?</p>
-                <ul class="form-binary">
-                    <li>Si</li>
-                    <li>No</li>
-                </ul>
-                <p>Si seleccionaste NO, deberá presentarse el dueño del dinero para realizar la operación.</p>
+            <hr>
+            <div>
+                <p class="center-text no-margin">¿Es tuyo el dinero que vas a cambiar?</p>
+                <input type="checkbox" name="yes" id="yes">
+                <label for="yes">Sí</label>
+                <input type="checkbox" name="no" id="no">
+                <label for="no">No</label>
+                <p class="center-text instructions no-margin">Si seleccionaste NO, deberá presentarse el dueño del dinero para realizar la operación.</p>
             </div>
+            <hr>
 
-            <div class="form-boxed"> 
-                <ol>
+            <div> 
+                <ol class="no-padding">
                     <li class="form-question">
-                        <p>Nombre completo:</p>
+                        <p class="no-padding form-question"><span class="big-letters">1) </span>Nombre completo:</p>
                         <div class="generic-input"></div>
                     </li>
                     <li>
-                        <p>¿En qué ciudad naciste?:</p>
+                        <p class="no-padding form-question"><span class="big-letters">2) </span>¿En qué ciudad naciste?:</p>
                         <div class="generic-input"></div>
                     </li>
                     <li>
-                        <p>Estado civil:</p>
+                        <p class="no-padding form-question"><span class="big-letters">3) </span>Estado civil:</p>
                         <div class="generic-input"></div>
                     </li>
                     <li>
-                        <p>Correo electrónico (en caso de tener uno):</p>
+                        <p class="no-padding form-question"><span class="big-letters">4) </span>Correo electrónico (en caso de tener uno):</p>
                         <div class="generic-input"></div>
                     </li>
                     <li>
-                        <p>Número de Identificación Fiscal (RFC/SSN):</p>
+                        <p class="no-padding form-question"><span class="big-letters">5) </span>Número de Identificación Fiscal (RFC/SSN):</>
                         <div class="generic-input"></div>
                     </li>
                     <li>
-                        <p>¿A qué te dedicas?:</p>
+                        <p class="no-padding form-question"><span class="big-letters">6) </span>¿A qué te dedicas?:</p>
                         <div class="generic-input"></div>
 
                         <div>
                             <ol>
                                 <li>
-                                    <p>¿En dónde trabajas?</p>
-                                    <p>Si eres estudiante, ama de casa o jubilado, escribe el nombre de la persona que te regaló el dinero.</p>
+                                    <p class="no-padding no-margin"><span class="big-letters">a) </span>¿En dónde trabajas?</p>
+                                    <p class="no-margin form-question">Si eres estudiante, ama de casa o jubilado, escribe el nombre de la persona que te regaló el dinero.</p>
                                     <div class="generic-input"></div>
                                 </li>
                             </ol>
                         </div>
                     </li>
                     <li>
-                        <p>Teléfono(s) (Obligatorio al menos uno):</p>
+                        <p class="no-padding form-question"><span class="big-letters">7) </span>Teléfono(s) (Obligatorio al menos uno):</p>
                         <div>
                             <ul>
                                 <li>
@@ -96,67 +98,70 @@
                         </div>
                     </li>
                     <li>
-                        <p>¿Vives en el domicilio declarado en el documento de identificación?:</p>
-                        <ul>
-                            <li>Si</li>
-                            <li>No</li>
-                        </ul>
+                        <p class="no-padding form-question"><span class="big-letters">8) </span>¿Vives en el domicilio declarado en el documento de identificación?:</p>
+                        <input type="checkbox" name="yes" id="yes">
+                        <label for="yes">Sí</label>
+                        <input type="checkbox" name="no" id="no">
+                        <label for="no">No</label>
                         <p>En caso de NO, favor de presentar un comprobante de domicilio válido.</p>
                     </li>
 
-                    <div class="form-boxed">
+                    <hr>
+                    <div>
                         <p>Doblar formato en ésta línea</p>
                     </div>
                 
                     <li>
-                        <p>¿Qué servicio necesitas?:</p>
-                        <ul>
-                            <li>Necesito pesos</li>
-                            <li>Necesito dólares</li>
-                            <li>Necesito ambos</li>
-                        </ul>
+                        <p class="no-padding form-question"><span class="big-letters">9) </span>¿Qué servicio necesitas?:</p>
+                        <input type="radio" name="pesos" id="pesos">
+                        <label for="pesos">Necesito pesos</label><br>
+                        <input type="radio" name="dolares" id="dolares">
+                        <label for="dolares">Necesito dólares</label><br>
+                        <input type="radio" name="ambos" id="ambos">
+                        <label for="ambos">Necesito ambos</label>
                     </li>
                     <li>
-                        <p>¿Cuántas veces cambias al mes?:</p>
+                        <p class="no-padding form-question"><span class="big-letters">10) </span>¿Cuántas veces cambias al mes?:</p>
                         <div class="generic-input"></div>
                     </li>
                     <li>
-                        <p>¿Qué cantidad ocupas al mes? (Sólo uno):</p>
-                        <ul>
-                            <li>Menos de 3,000 Dólares</li>
-                            <li>De 3,000 a 10,000 Dólares</li>
-                            <li>Más de 10,000 Dólares</li>
-                        </ul>
+                        <p class="no-padding form-question"><span class="big-letters">11) </span>¿Qué cantidad ocupas al mes? (Sólo uno):</p>
+                        <input type="radio" id="less-than-3k" name="less-than-3k">
+                        <label for="less-than-3k">Menos de 3,000 Dólares</label><br>
+                        <input type="radio" id="3k-to-10k" name="3k-to-10k">
+                        <label for="3k-to-10k">De 3,000 a 10,000 Dólares</label><br>
+                        <input type="radio" id="more-than-10k" name="more-than-10k">
+                        <label for="more-than-10k">Más de 10,000 Dólares</label>
                     </li>
                     <li>
-                        <p>El dinero proviene de (Sólo uno):</p>
-                        <ul>
-                            <li>De mi negocio y/u ocupación.</li>
-                            <li>De otra actividad y/o motivo.</li>
-                        </ul>
+                        <p class="no-padding form-question"><span class="big-letters">12) </span>El dinero proviene de (Sólo uno):</p>
+                        <input type="radio" id="business" name="business">
+                        <label for="business">De mi negocio y/u ocupación.</label><br>
+                        <input type="radio" id="other" name="other">
+                        <label for="other">De otra actividad y/o motivo.</label>
                         <p>Describir detalladamente (Obligatorio):</p>
                         <div class="big-input"></div>
                     </li>
                     <li>
-                        <p>El dinero lo usarás para (Sólo uno):</p>
-                        <ul>
-                            <li>Mi negocio y/u ocupación.</li>
-                            <li>Para otra actividad y/o motivo.</li>
-                        </ul>
+                        <p class="no-padding form-question"><span class="big-letters">13) </span>El dinero lo usarás para (Sólo uno):</p>
+                        <input type="radio" id="business" name="business">
+                        <label for="business">De mi negocio y/u ocupación.</label><br>
+                        <input type="radio" id="other" name="other">
+                        <label for="other">De otra actividad y/o motivo.</label>
                         <p>Describir detalladamente (Obligatorio):</p>
                         <div class="big-input"></div>
                     </li>
                 </ol>
 
                 <div class="big-input">
-                    <h2><span>Firma</span> (No salir del recuadro)</h2>
+                    <h2 class="big-letters no-margin">Firma <span>(No salir del recuadro)</span></h2>
                 </div>
             </div>
 
             <footer>
                 <div>
-                    <h2>Favor de entregar al Cajero</h2>
-                    <p>"Declaro bajo protesta de decir verdad, la autenticidad de la información y documentación proporcionada al centro cambiario, así como que los recursos que opero y operaré, y su origen, manejo o destino no se encuentran relacionados con operaciones que pudieran favorecer, prestar ayuda, auxilio o cooperación de cualquier especie para la comisión de los delitos previstos en los Artículos 400 BIS y/o 139 Quater del Código Penal Federal (operaciones con recursos de procedencia ilícita y/o financiamiento al terrorismo)."</p>
+                    <h2 class="big-letters no-margin">Favor de entregar al Cajero</h2>
+                    <h2 class="center-text instructions no-margin">"Declaro bajo protesta de decir verdad, la autenticidad de la información y documentación proporcionada al centro cambiario, así como que los recursos que opero y operaré, y su origen, manejo o destino no se encuentran relacionados con operaciones que pudieran favorecer, prestar ayuda, auxilio o cooperación de cualquier especie para la comisión de los delitos previstos en los Artículos 400 BIS y/o 139 Quater del Código Penal Federal (operaciones con recursos de procedencia ilícita y/o financiamiento al terrorismo)."</h2>
                 </div>
 
                 <div>
@@ -164,7 +169,7 @@
                 </div>
 
                 <div>
-                    <h3>Aviso de privacidad en: www.moneyexpress.io</h3>
+                    <h6>Aviso de privacidad en: www.moneyexpress.io</h6>
                 </div>
             </footer>
         </main>
