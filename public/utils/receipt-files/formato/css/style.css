@@ -1,17 +1,14 @@
 @page {
     margin: 0;
 }
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    width: 100%;
 }
-
 body {
     font-family: Arial, Sans-serif;
     height: 100%;
-    width: 95%;
 }
 footer {
     clear: both;
@@ -19,7 +16,7 @@ footer {
 }
 .cf:before, .cf:after { content: ""; display: table; }
 .cf:after { clear: both; }
-
+.cf { zoom: 1; }
 /* Classes */
 .big-input {
     border: 2px solid black;
@@ -28,6 +25,13 @@ footer {
     height: 120px;
     position: relative;
     text-align: center;
+}
+.cellphone-check {
+    border: 2px solid black;
+    border-radius: 6px;
+    display: inline-block;
+    height: 31px;
+    width: 15%;
 }
 .cellphone-components {
     clear: both;
@@ -39,6 +43,7 @@ footer {
 .cellphone-input {
     border: 2px solid black;
     border-radius: 6px;
+    display: inline-block;
     font-weight: bold;
     height: 23px;
     line-height: 23px;
@@ -47,10 +52,13 @@ footer {
     width: 87%;
 }
 .cellphone-inputs {
+    display: inline-block;
     float: right;
+    height: 35px;
     width: 78%;
 }
 .cellphone-title {
+    clear: both;
     display: inline-block;
     font-size: 13px;
     line-height: 35px;
@@ -73,12 +81,15 @@ footer {
 .checkbox-text {
     display: inline-block;
     font-size: 12px;
+    width: 90%;
 }
 .company-name {
     font-size: 6.35pt;
     margin: 0 auto;
+    margin-bottom: 3px;
     text-align: center;
     text-transform: uppercase;
+    width: 80%;
 }
 .dotted-instructions {
     border-top: 2px dotted black;
@@ -123,6 +134,12 @@ footer {
     text-align: right;
     vertical-align: middle;
 }
+.fecha:before {
+    content: '--  ';
+}
+.fecha:after {
+    content: '  --';
+}
 .generic-input {
     border: 2px solid black;
     border-radius: 6px;
@@ -150,7 +167,11 @@ footer {
     line-height: 130%;
     margin: 0 auto;
     margin-bottom: 6px;
+    text-align: left;
     width: 98%;
+}
+.main-body {
+    width: 100%;
 }
 .sign-title {
     bottom: 4px;
@@ -160,7 +181,9 @@ footer {
     font-size: 14px;
 }
 .subtitle-input {
+    display: block;
     float: right;
+    font-size: 11px;
     margin-top: 4px;
     margin-bottom: 5px;
     width: 90%;
@@ -169,6 +192,7 @@ footer {
     font-size: 11px;
     clear: both;
     margin-bottom: 4px;
+    width: 100%;
 }
 .title-input .num {
     font-size: 14px;
@@ -176,12 +200,17 @@ footer {
 .dashed-input {
     border-bottom: 2px dotted black;
     border-top: 2px dotted black;
+    overflow: hidden;
     padding: 4px 0;
 }
 .dashed-input strong {
     clear: both;
     display: block;
     text-align: center;
+}
+.underline-input {
+    height: 20px;
+    border-bottom: 2px solid black;
 }
 .options-ctn {
     clear: both;
@@ -204,6 +233,8 @@ footer {
 }
 .option-label {
     font-weight: bold;
+    line-height: 18px;
     vertical-align: top;
+    display: inline-block;
     margin-top: 2px;
 }
