@@ -50,7 +50,7 @@ hr {
 }
 
 .fold {
-    font-size: smaller;
+    font-size: small;
     padding-bottom: 1rem;
 }
 
@@ -135,7 +135,7 @@ input[type="checkbox"] {
     margin-bottom: 0.4rem;
 }
 
-.binary-option label, .radio-options label {
+label {
     font-size: 1.1rem;
 }
 
@@ -191,4 +191,11 @@ footer p {
 
 .date span {
     font-weight: bold;
+}
+.phone-input {
+text-align: right;
+}
+
+.phone-input input {
+    width: 65%
 }
