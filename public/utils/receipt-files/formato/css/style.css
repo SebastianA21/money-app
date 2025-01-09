@@ -1,240 +1,194 @@
 @page {
     margin: 0;
 }
-html,
-body {
+
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 62.5%;
 }
+
 body {
     font-family: Arial, Sans-serif;
     height: 100%;
 }
-footer {
-    clear: both;
+
+h1, h2, h3, h4 span, h5 {
     text-align: center;
+    
 }
-.cf:before, .cf:after { content: ""; display: table; }
-.cf:after { clear: both; }
-.cf { zoom: 1; }
-/* Classes */
-.big-input {
-    border: 2px solid black;
-    border-radius: 6px;
-    margin-bottom: 5px;
-    height: 120px;
-    position: relative;
-    text-align: center;
-}
-.cellphone-check {
-    border: 2px solid black;
-    border-radius: 6px;
-    display: inline-block;
-    height: 31px;
-    width: 15%;
-}
-.cellphone-components {
-    clear: both;
-    float: right;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    width: 95%;
-}
-.cellphone-input {
-    border: 2px solid black;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: bold;
-    height: 23px;
-    line-height: 23px;
-    margin-left: 5px;
-    padding: 4px 8px;
-    width: 87%;
-}
-.cellphone-inputs {
-    display: inline-block;
-    float: right;
-    height: 35px;
-    width: 78%;
-}
-.cellphone-title {
-    clear: both;
-    display: inline-block;
-    font-size: 13px;
-    line-height: 35px;
-    text-align: right;
-    width: 22%;
-}
-.checkbox-input {
-    border: 2px solid black;
-    border-radius: 50%;
-    display: inline-block;
-    height: 7px;
-    width: 7px;
-}
-.checkbox-inputs {
-    float: right;
-    margin-bottom: 4px;
-    margin-top: 2px;
-    width: 95%;
-}
-.checkbox-text {
-    display: inline-block;
-    font-size: 12px;
-    width: 90%;
-}
-.company-name {
-    font-size: 6.35pt;
-    margin: 0 auto;
-    margin-bottom: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 80%;
-}
-.dotted-instructions {
-    border-top: 2px dotted black;
-    clear: both;
-    color: black;
-    font-size: 10px;
-    height: 11px;
-    line-height: 11px;
-    margin: 0.25cm 0;
-    padding-top: 6px;
-    text-align: center;
-    vertical-align: middle;
-}
-.footer-advise {
-    font-size: 7pt;
-    margin: 0 auto;
-    width: 98%;
-}
-.footer-title {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-.form-title,
-.privacidad {
+h1, h6 {
     background-color: black;
     color: white;
-    font-size: 10pt;
-    margin: 0.5cm 0 0.25cm;
-    padding: 0.1cm 0;
-    text-align: center;
+    padding: 0.4rem;
     vertical-align: middle;
 }
-.privacidad {
-    font-size: 7pt;
-    margin-bottom: 0;
-    margin-top: 0.25cm;
+h3 {
+    font-size: 0.85rem;
 }
-.fecha {
-    font-size: 7pt;
-    margin-bottom: 0.25cm 0;
-    padding-right: 0.25cm;
-    text-align: right;
-    vertical-align: middle;
+h5 {
+    font-size: 0.8rem;
+    line-height: normal;
 }
-.fecha:before {
-    content: '--  ';
+p, li {
+    font-size: 1.1rem;
 }
-.fecha:after {
-    content: '  --';
-}
-.generic-input {
-    border: 2px solid black;
-    border-radius: 6px;
+
+th {
+    background-color: #f4f4f4;
     font-weight: bold;
-    min-height: 23px;
-    line-height: 23px;
-    margin-top: 3px;
-    padding: 4px 8px;
 }
+td {
+    padding: 0;
+    margin: 0;
+}
+hr {
+    border-top: 2px dotted;
+    margin: 1rem 0 0.5rem;
+}
+
+.fold {
+    font-size: smaller;
+    padding-bottom: 1rem;
+}
+
+.center-text {
+    text-align: center;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.no-padding {
+    padding: 0;
+}
+.no-margin {
+    margin: 0;
+}
+
+.big-letters {
+    font-size: 1.3rem;
+}
+.instructions {
+    margin: 0.2cm 0.1cm 2px;
+    line-height: 1.3;
+    font-size: 8pt;
+}
+
+.form-title {
+    margin: 0.5cm 0 0.25cm;
+}
+
 .img-div {
     height: 2.5cm;
-    padding: 0.5cm 0;
+    padding: 0.5cm 0 0.3cm;
     width: 100%;
+    display: grid;
 }
 .img-div img {
     padding-left: 0.35cm;
     width: 85%;
 }
-.inputs {
-    width: 100%;
-    margin-bottom: 3px;
+
+.generic-input, .big-input {
+    border: 2px solid black;
+    border-radius: 6px;
+    min-height: 2.4rem;
+    padding: 4px 8px;
+    margin-bottom: 0.1cm;
+    width: 92%;
 }
-.instructions {
-    font-size: 10.5px;
-    line-height: 130%;
-    margin: 0 auto;
-    margin-bottom: 6px;
-    text-align: left;
-    width: 98%;
+.big-input {
+    height: 120px;
+    position: relative;
+    text-align: center;
 }
-.main-body {
-    width: 100%;
+
+input[type="radio"], input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: middle; 
+    margin-left: 1.2rem;
 }
-.sign-title {
+
+input[type="checkbox"] {
+    border-radius: 6px;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.6rem 0;
+}
+
+.binary-option {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+.radio-options {
+    margin-bottom: 0.4rem;
+}
+
+.binary-option label, .radio-options label {
+    font-size: 1.1rem;
+}
+
+.radio-options label {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.form-question {
+    margin: 0 0 3px;
+}
+
+.first-row {
+   margin: 0.3rem 0;
+   padding: 0.2rem 0;
+}
+
+.number {
+    font-size: 1.4rem; 
+}
+
+.sub-question {
+    margin-left: 2rem;
+}
+
+.sub-question p {
+    margin: 0 0 0.3rem;
+}
+
+.important-letters {
+    font-size: 1.4rem;
+}
+
+.big-input h2 {
     bottom: 4px;
     left: 0;
     position: absolute;
     right: 0;
-    font-size: 14px;
 }
-.subtitle-input {
-    display: block;
-    float: right;
-    font-size: 11px;
-    margin-top: 4px;
-    margin-bottom: 5px;
-    width: 90%;
+
+.advise {
+    margin: 0.1cm 0.05cm 0.2cm;
 }
-.title-input {
-    font-size: 11px;
-    clear: both;
-    margin-bottom: 4px;
-    width: 100%;
+
+footer p {
+    font-size: 7pt;
 }
-.title-input .num {
-    font-size: 14px;
+
+.date {
+    font-weight: normal;
+    text-align: right;
 }
-.dashed-input {
-    border-bottom: 2px dotted black;
-    border-top: 2px dotted black;
-    overflow: hidden;
-    padding: 4px 0;
-}
-.dashed-input strong {
-    clear: both;
-    display: block;
-    text-align: center;
-}
-.underline-input {
-    height: 20px;
-    border-bottom: 2px solid black;
-}
-.options-ctn {
-    clear: both;
-    margin: 4px 0;
-}
-.option-ctn {
-    float: left;
-    line-height: 18px;
-    margin-left: -9px;
-    text-align: center;
-    width: 50%;
-}
-.option-check {
-    border: 2px solid black;
-    border-radius: 6px;
-    display: inline-block;
-    height: 18px;
-    margin-left: 10px;
-    width: 18px;
-}
-.option-label {
+
+.date span {
     font-weight: bold;
-    line-height: 18px;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: 2px;
 }
