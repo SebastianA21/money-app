@@ -16,15 +16,17 @@ body {
 }
 
 h1, h2, h3, h4 span, h5 {
-    text-transform: uppercase;
     text-align: center;
     
 }
-h1 {
+h1, h6 {
     background-color: black;
     color: white;
-    padding: 0.25rem;
+    padding: 0.4rem;
     vertical-align: middle;
+}
+h3 {
+    font-size: 0.85rem;
 }
 h5 {
     font-size: 0.8rem;
@@ -38,13 +40,25 @@ th {
     background-color: #f4f4f4;
     font-weight: bold;
 }
-
+td {
+    padding: 0;
+    margin: 0;
+}
 hr {
     border-top: 2px dotted;
+    margin: 1rem 0 0.5rem;
+}
+
+.fold {
+    font-size: smaller;
+    padding-bottom: 1rem;
 }
 
 .center-text {
     text-align: center;
+}
+.uppercase {
+    text-transform: uppercase;
 }
 
 .no-padding {
@@ -55,11 +69,12 @@ hr {
 }
 
 .big-letters {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 .instructions {
-    margin: 0.2cm 0 0;
+    margin: 0.2cm 0.1cm 2px;
     line-height: 1.3;
+    font-size: 8pt;
 }
 
 .form-title {
@@ -68,10 +83,9 @@ hr {
 
 .img-div {
     height: 2.5cm;
-    padding: 0.5cm 0;
-    width: 95%;
+    padding: 0.5cm 0 0.3cm;
+    width: 100%;
     display: grid;
-    place-items: center;
 }
 .img-div img {
     padding-left: 0.35cm;
@@ -88,4 +102,93 @@ hr {
 }
 .big-input {
     height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    vertical-align: middle; 
+    margin-left: 1.2rem;
+}
+
+input[type="checkbox"] {
+    border-radius: 6px;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: 0.6rem 0;
+}
+
+.binary-option {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+.radio-options {
+    margin-bottom: 0.4rem;
+}
+
+.binary-option label, .radio-options label {
+    font-size: 1.1rem;
+}
+
+.radio-options label {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.form-question {
+    margin: 0 0 3px;
+}
+
+.first-row {
+   margin: 0.3rem 0;
+   padding: 0.2rem 0;
+}
+
+.number {
+    font-size: 1.4rem; 
+}
+
+.sub-question {
+    margin-left: 2rem;
+}
+
+.sub-question p {
+    margin: 0 0 0.3rem;
+}
+
+.important-letters {
+    font-size: 1.4rem;
+}
+
+.big-input h2 {
+    bottom: 4px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.advise {
+    margin: 0.1cm 0.05cm 0.2cm;
+}
+
+footer p {
+    font-size: 7pt;
+}
+
+.date {
+    font-weight: normal;
+    text-align: right;
+}
+
+.date span {
+    font-weight: bold;
 }
