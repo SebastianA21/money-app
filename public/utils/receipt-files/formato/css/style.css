@@ -1,6 +1,6 @@
 @page {
     margin: 0;
-    width: 7.2cm;
+    width: 2.75in;
 }
 
 html, body {
@@ -57,10 +57,6 @@ hr {
     margin: 1rem 0 0.5rem;
 }
 
-label {
-    font-size: 1.1rem;
-}
-
 input[type="radio"], input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -112,8 +108,11 @@ input[type="checkbox"] {
 
 /* Classes */
 
+
+label, .fold {
+    font-size: 1.1rem;
+}
 .fold {
-    font-size: small;
     padding-bottom: 1rem;
 }
 
@@ -144,6 +143,7 @@ input[type="checkbox"] {
     height: 120px;
     position: relative;
     text-align: center;
+    margin-top: 3px;
 }
 .big-input h2 {
     bottom: 4px;
