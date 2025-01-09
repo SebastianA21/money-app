@@ -1,6 +1,6 @@
 @page {
     margin: 0;
-    size: 2.75in 54cm;
+    size: 2.8in 22in;
 }
 
 html, body {
@@ -20,7 +20,7 @@ body {
 
 h1, h2, h3, h4 span, h5 {
     text-align: center;
-    
+
 }
 h1, h5 {
     background-color: black;
@@ -65,7 +65,7 @@ input[type="radio"], input[type="checkbox"] {
     border-radius: 50%;
     width: 1.3rem;
     height: 1.3rem;
-    vertical-align: middle; 
+    vertical-align: middle;
     margin-left: 1.2rem;
 }
 
@@ -171,12 +171,12 @@ label, .fold {
 }
 
 .first-row {
-   margin: 0.3rem 0;
-   padding: 0.2rem 0;
+    margin: 0.3rem 0;
+    padding: 0.2rem 0;
 }
 
 .number {
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
 }
 
 .sub-question {
